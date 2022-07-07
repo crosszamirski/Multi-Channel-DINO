@@ -20,10 +20,12 @@ import albumentations # to augment and transform images
 sys.path.append('/projects/')
 from torch.utils.data import Dataset    
 
-# find these here: https://github.com/facebookresearch/dino
-import utils 
-import vision_transformer as vits
+import vision_transformer5 as vits # change "in_chans" to the number of channels required (default = 5)
 from vision_transformer import DINOHead
+
+# find utils here: https://github.com/facebookresearch/dino
+import utils 
+
 
 
 torchvision_archs = sorted(name for name in torchvision_models.__dict__
@@ -206,7 +208,6 @@ class NaturalImageDataset(Dataset):
         
         image_1 = np.expand_dims(image_1,0)
         image1_1 = np.expand_dims(image1_1,0)
-        
         image2_1 = np.expand_dims(image2_1,0)
         image3_1 = np.expand_dims(image3_1,0)
         image4_1 = np.expand_dims(image4_1,0)
