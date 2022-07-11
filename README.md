@@ -1,6 +1,6 @@
-# Multi-Channel-dino
+# Multi-Channel-dino from 
 
-An adaptation of [Facebookresearch's](https://github.com/facebookresearch) [dino algorithm](https://github.com/facebookresearch/dino) to 5 channels, easily adaptable to any number of channels (rather than just RGB).
+An adaptation of the [dino algorithm](https://github.com/facebookresearch/dino) from [Facebookresearch](https://github.com/facebookresearch) to 5 channels, easily adaptable to any number of channels (rather than just RGB).
 
 This work was done with [Cell Painting](https://www.nature.com/articles/nprot.2016.105) 5-channel data in mind, but could be useful for any other medical or biological imaging modalities with greater or fewer than 3 channels.
 
